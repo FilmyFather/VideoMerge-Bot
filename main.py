@@ -56,11 +56,11 @@ async def start_handler(bot: Client, m: Message):
         quote=True,
         reply_markup=InlineKeyboardMarkup(
             [
-                [InlineKeyboardButton("Developer - @AbirHasan2005", url="https://t.me/AbirHasan2005")],
-                [InlineKeyboardButton("Support Group", url="https://t.me/linux_repo"),
-                 InlineKeyboardButton("Bots Channel", url="https://t.me/Discovery_Updates")],
-                [InlineKeyboardButton("Open Settings", callback_data="openSettings")],
-                [InlineKeyboardButton("Close", callback_data="closeMeh")]
+                [InlineKeyboardButton("𝔻𝕖𝕧𝕖𝕝𝕠𝕡𝕖𝕣 - 𝕐𝕦𝕧𝕣𝕒𝕛", url="https://t.me/Yuvi_4502")],
+                [InlineKeyboardButton("𝔽𝕚𝕝𝕞𝕪𝔽𝕒𝕥𝕙𝕖𝕣 𝔹𝕠𝕥 𝕃𝕚𝕤𝕥", url="https://t.me/FilmyFather_BotList"),
+                 InlineKeyboardButton("𝕊𝕦𝕡𝕡𝕠𝕣𝕥 𝔾𝕣𝕠𝕦𝕡", url="https://t.me/RequestingHuB")],
+                [InlineKeyboardButton("𝕆𝕡𝕖𝕟 𝕊𝕖𝕥𝕥𝕚𝕟𝕘𝕤", callback_data="openSettings")],
+                [InlineKeyboardButton("ℂ𝕝𝕠𝕤𝕖", callback_data="closeMeh")]
             ]
         )
     )
@@ -355,7 +355,7 @@ async def callback_handlers(bot: Client, cb: CallbackQuery):
                 return
             except Exception:
                 await cb.message.edit(
-                    text="Something went Wrong. Contact my [Support Group](https://t.me/linux_repo).",
+                    text="Something went Wrong. Contact my [Support Group](https://t.me/yuvi_4502).",
                     parse_mode="markdown",
                     disable_web_page_preview=True
                 )
@@ -363,7 +363,7 @@ async def callback_handlers(bot: Client, cb: CallbackQuery):
         await cb.message.edit(
             text=Config.START_TEXT,
             parse_mode="Markdown",
-            reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("Developer - @AbirHasan2005", url="https://t.me/AbirHasan2005"), InlineKeyboardButton("Support Group", url="https://t.me/linux_repo")], [InlineKeyboardButton("Bots Channel", url="https://t.me/Discovery_Updates")]]),
+            reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("𝔻𝕖𝕧𝕖𝕝𝕠𝕡𝕖𝕣 - Yᵤᵥᵣₐⱼ", url="https://t.me/YUVI_4502"), InlineKeyboardButton("Support Group", url="https://t.me/REQUESTINGHUB")], [InlineKeyboardButton("Bots Channel", url="https://t.me/FilmyFather_BotList")]]),
             disable_web_page_preview=True
         )
     elif "showThumbnail" in cb.data:
